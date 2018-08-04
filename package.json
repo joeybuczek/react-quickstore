@@ -1,9 +1,11 @@
 {
   "name": "react-quickstore",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React component for state management that uses the Context API",
   "main": "lib/index.js",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "webpack"
   },
@@ -25,29 +27,39 @@
     "url": "https://github.com/joeybuczek/react-quickstore/issues"
   },
   "homepage": "https://github.com/joeybuczek/react-quickstore#readme",
+  "dependencies": {
+    "react": "^16.4.1"
+  },
   "peerDependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": "^16.4.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-react-app": "^3.1.2",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4",
-    "webpack-merge": "^4.1.3"
+    "webpack-dev-server": "^3.1.4"
   },
   "babel": {
     "presets": [
-      "env",
+      [
+        "env",
+        {
+          "modules": "commonjs"
+        }
+      ],
       "react"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-object-rest-spread"
     ]
   }
 }
