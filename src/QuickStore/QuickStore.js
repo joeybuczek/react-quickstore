@@ -1,7 +1,10 @@
 import React from "react";
 
 // Create context
-const QuickStoreContext = React.createContext({});
+export const QuickStoreContext = React.createContext({
+  state: {},
+  dispatch: () => {}
+});
 
 // Main QuickStore component
 class QuickStore extends React.Component {

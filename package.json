@@ -1,6 +1,6 @@
 {
   "name": "react-quickstore",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "A React component for state management that uses the Context API",
   "main": "lib/index.js",
   "files": [
@@ -28,10 +28,10 @@
   },
   "homepage": "https://github.com/joeybuczek/react-quickstore#readme",
   "dependencies": {
-    "react": "^16.4.1"
+    "react": "^16.8.6"
   },
   "peerDependencies": {
-    "react": "^16.4.1"
+    "react": "^16.8.6"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

@@ -1,1 +1,1 @@
-export { Provider, Consumer } from "./QuickStore";
+export { Provider, Consumer, useQuickStore } from "./QuickStore";
